@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кыргызский государственный университет</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Styles -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        header {
+    position: relative;
+    height: 100vh;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 10px 0 20px;
+        }
+
+        header a {
+            text-decoration: none;
+            padding: 10px 25px;
+            font-size: 1rem;
+            background-color: #004080;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header a:hover {
+            background-color: #002a4d;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffa500;
+        }
+
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #004080;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #004080;
+        }
+
+        .card p {
+            padding: 0 15px 20px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#programs">Программы</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <header>
+        <h1>Добро пожаловать в КГУСТА</h1>
+        <p>Инновации, образование, будущее</p>
+        <a href="#about">Узнать больше</a>
+    </header>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы являемся ведущим университетом в Кыргызстане, предоставляющим первоклассное образование в области строительства, транспорта и архитектуры.</p>
+    </section>
+
+    <section id="programs">
+    <h2>Программы</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="images/architecture.jpg" alt="Architecture">
+            <h3>Архитектура</h3>
+            <p>Изучите основы и современные методы проектирования зданий и городских пространств.</p>
+        </div>
+        <div class="card">
+            <img src="images/transport.jpg" alt="Transport">
+            <h3>Транспорт</h3>
+            <p>Программы по логистике и транспортным технологиям для будущих инженеров.</p>
+        </div>
+        <div class="card">
+            <img src="images/engineering.jpg" alt="Engineering">
+            <h3>Инженерия</h3>
+            <p>Развивайте навыки в области инженерных технологий и автоматизации.</p>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2024 Кыргызский государственный университет. Все права защищены.</p>
+    </footer>
+</body>
+</html>
